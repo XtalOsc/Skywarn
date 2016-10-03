@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Sywarn Project</title>
+  <script src="./vendors/angular.min.js" charset="utf-8"></script>
+  <script src="./vendors/angular-route.min.js"></script>
+  <script src="./scripts/client.js"></script>
+  <script src="./scripts/controllers/view1.js"></script>
+  <script src="./scripts/controllers/view2.js"></script>
+  <script src="./scripts/controllers/view3.js"></script>
+  <link rel="stylesheet" href="./styles/master.css">
+</head>
+<body>
+  <div class="btn-group btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+      <a href="#view1"><button type="button" class="btn btn-default">View 1</button></a>
+    </div>
+    <div class="btn-group" role="group">
+      <a href="#view2"><button type="button" class="btn btn-default">View 2</button></a>
+    </div>
+    <div class="btn-group" role="group">
+      <a href="#view3"><button type="button" class="btn btn-default">View 3</button></a>
+    </div>
+  </div>
+<main ng-view></main>
+</body>
+</html>

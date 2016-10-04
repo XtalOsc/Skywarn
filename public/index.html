@@ -2,25 +2,38 @@
 <html ng-app="myApp">
 <head>
   <meta charset="utf-8">
-  <title>Sywarn Project</title>
+  <title>Skywarn Project</title>
   <script src="./vendors/angular.min.js" charset="utf-8"></script>
   <script src="./vendors/angular-route.min.js"></script>
   <script src="./scripts/client.js"></script>
   <script src="./scripts/controllers/view1.js"></script>
   <script src="./scripts/controllers/view2.js"></script>
   <script src="./scripts/controllers/view3.js"></script>
+  <script src="./scripts/jquery-3.1.0.js"></script>
+  <script src="./scripts/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
   <link rel="stylesheet" href="./styles/master.css">
 </head>
 <body>
-  <div class="btn-group btn-group-justified" role="group" aria-label="...">
-    <div class="btn-group" role="group">
-      <a href="#view1"><button type="button" class="btn btn-default">View 1</button></a>
-    </div>
-    <div class="btn-group" role="group">
-      <a href="#view2"><button type="button" class="btn btn-default">View 2</button></a>
-    </div>
-    <div class="btn-group" role="group">
-      <a href="#view3"><button type="button" class="btn btn-default">View 3</button></a>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="./image/skywarnlogo.gif" alt="skywarn logo">
+        <a class="navbar-brand">Skywarn Spotter</a>
+      </div>
+      <div class="navbar-collapse collapse" >
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#view1">Spotter Report Form</a></li>
+          <li><a href="#view2">Watches and Warnings</a></li>
+          <li><a href="#view3">View Spotter Reports</a></li>
+          </ul>
+        </div>
     </div>
   </div>
 <main ng-view></main>

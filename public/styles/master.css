@@ -2,3 +2,39 @@ body{
   padding-top: 50px;
   padding-left: 15px;
 }
+
+img{
+  margin-top:-5px;
+  height:30px;
+  width: auto;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p{
+  text-align: center;
+}
+
+input{
+  margin-right: 10px;
+  border-width: thin;
+  padding-left: 5px;
+  border-bottom-color: black;
+  border-right-color: black;
+}
+
+.button{
+  margin: 10px 0px 0px 5px;
+  border-radius: 5px;
+  border-color: black;
+  background: white;
+  border-width: thin;
+}
+
+.center{
+  display: block;
+  margin: 0 auto;
+}

@@ -60,7 +60,6 @@ myApp.controller( 'home', [ '$scope', '$http', function( $scope, $http ){
   // run init on controller load
   $scope.init();
 }]); // end authController
-
 var emptyLocalStorage = function(){
   localStorage.removeItem( 'userProfile' );
   localStorage.removeItem( 'userToken' );

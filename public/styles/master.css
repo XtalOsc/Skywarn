@@ -38,3 +38,16 @@ input{
   display: block;
   margin: 0 auto;
 }
+
+.warning{
+font-size: 15px;
+font-weight: bold;
+}
+
+.date{
+  font-size: 15px;
+}
+
+.description{
+  font-size: 15px;
+}

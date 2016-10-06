@@ -8,6 +8,7 @@
   <script src="./vendors/angular.min.js" charset="utf-8"></script>
   <script src="./vendors/angular-route.min.js"></script>
   <script src="./scripts/client.js"></script>
+  <script src="./scripts/controllers/home.js"></script>
   <script src="./scripts/controllers/view1.js"></script>
   <script src="./scripts/controllers/view2.js"></script>
   <script src="./scripts/controllers/view3.js"></script>
@@ -30,7 +31,7 @@
         <a class="navbar-brand">Skywarn Spotter</a>
       </div>
       <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right" ng-controller="authController">
+        <ul class="nav navbar-nav navbar-right" ng-controller="home">
           <li ng-show='showUser'><a href="#view1">Spotter Report Form</a></li>
           <li ng-show='showUser'><a href="#view2">Watches and Warnings</a></li>
           <li ng-show='showUser'><a href="#view3">View Spotter Reports</a></li>

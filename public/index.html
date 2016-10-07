@@ -32,11 +32,11 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right" ng-controller="home">
-          <li ng-show='showUser'><a href="#view1">Spotter Report Form</a></li>
-          <li ng-show='showUser'><a href="#view2">Watches and Warnings</a></li>
-          <li ng-show='showUser'><a href="#view3">View Spotter Reports</a></li>
-          <li ng-show='showUser'><a ng-click='logOut()'>Log Out</a></li>
-          <li ng-hide='showUser'><a ng-click='logIn()'>Log In</a></li>
+          <li ng-show='showUser'><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#view1">Spotter Report Form</a></li>
+          <li ng-show='showUser'><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#view2">Watches and Warnings</a></li>
+          <li ng-show='showUser'><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#view3">View Spotter Reports</a></li>
+          <li ng-show='showUser'><a data-toggle="collapse" data-target=".navbar-collapse.in" ng-click='logOut()'>Log Out</a></li>
+          <li ng-hide='showUser'><a data-toggle="collapse" data-target=".navbar-collapse.in" ng-click='logIn()'>Log In</a></li>
         </ul>
       </div>
     </div>

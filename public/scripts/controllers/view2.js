@@ -1,6 +1,12 @@
 myApp.controller("view2",["$scope","$http",function($scope,$http){
   if(verbose){console.log('in controller2');};
 
+  $(document).on('click','.navbar-collapse.in',function(e) {
+      if( $(e.target).is('a') ) {
+          $(this).collapse('hide');
+        }//end if
+    });//end doc on click navbar-collapse
+
   $scope.report=[];
   $scope.searchZip = function(){
     $http({
@@ -12,4 +18,4 @@ myApp.controller("view2",["$scope","$http",function($scope,$http){
       console.log("API response:",response.data);
     })//end return
   };//end function
-}]);
+}]);//end view2 controller

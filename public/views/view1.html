@@ -2,7 +2,12 @@
 
 <p>Spotter ID: <input type="text" size="10"></p>
 <p>Call Sign: <input type="text" size="10"></p>
-<p>Type of Weather Reporting: <input type="text"></p>
 <p>Current Location - Report Major Cross Streets: <input type="text" size="40"></p>
+<p>
+  Type of Weather Reporting:
+  <select ng-model="selectedItem" ng-options="item as item.name for item in items" width="30">
+    <option value="" ng-if="selectedItem">Select weather event</option>
+  </select>
+</p>
 <p>Additional Information: <input type="text" size="40"></p>
 <button class="button center">Submit</button>

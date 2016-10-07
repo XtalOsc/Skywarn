@@ -16,6 +16,14 @@ myApp.controller( 'home', [ '$scope', '$http', function( $scope, $http ){
       $scope.userProfile = JSON.parse( localStorage.getItem( 'userProfile' ) );
       console.log( 'loggedIn:', $scope.userProfile );
       $scope.showUser = true;
+      if( $scope.userProfile.email == 'admin@admin.com' ){
+        $scope.isAdmin = true;
+        $scope.isUser = false;
+      }
+      else{
+        $scope.isAdmin = false;
+        $scope.isUser = true;
+      }
     }
     else{
       // if not, make sure we are logged out and empty
@@ -53,6 +61,8 @@ myApp.controller( 'home', [ '$scope', '$http', function( $scope, $http ){
         // empty localStorage
         emptyLocalStorage();
         $scope.showUser = false;
+        $scope.isAdmin = false;
+        $scope.isUser = false;
       }
     })
   }; // end scope.logIn

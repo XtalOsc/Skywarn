@@ -1,5 +1,5 @@
 var verbose = true;
-
+if(verbose){console.log('in client.js');};
 var myApp = angular.module("myApp", ["ngRoute"]);
 
 myApp.config(["$routeProvider", function($routeProvider){

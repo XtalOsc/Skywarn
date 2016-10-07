@@ -1,6 +1,7 @@
 body{
   padding-top: 50px;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 img{
@@ -40,8 +41,9 @@ input{
 }
 
 .warning{
-font-size: 15px;
+font-size: 20px;
 font-weight: bold;
+text-decoration: underline;
 }
 
 .date{
@@ -49,5 +51,13 @@ font-weight: bold;
 }
 
 .description{
+  font-size: 15px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFF;
+}
+
+.expire{
   font-size: 15px;
 }

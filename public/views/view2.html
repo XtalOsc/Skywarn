@@ -1,14 +1,15 @@
 <h2>Watches and Warnings</h2>
 
 <p>
-  Zipcode: <input type="text" ng-model="zipcode" size="8">
+  Zipcode: <input type="number" ng-model="zipcode" size="8" maxlength="5">
   <button class="button" ng-click="searchZip()">Submit</button>
 </p>
 
 <div>
   <p ng-repeat='warning in report.alerts'>
     <br><span class="warning">{{warning.description}}</span><br>
-    <span class="date">{{warning.date}} to {{warning.expires}}</span><br>
+    <span class="date"><b>Starts:</b> {{warning.date}}</span><br>
+    <span class="expire"><b>Expires:</b> {{warning.expires}}</span><br>
     <span class="description">{{warning.message}}</span><br><br>
   </p>
 </div>

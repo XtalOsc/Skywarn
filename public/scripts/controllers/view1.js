@@ -13,7 +13,7 @@ myApp.controller("view1",["$scope","$http",function($scope,$http){
 
   $scope.newSkywarnReport = function(){
     if(verbose){console.log('in newSkywarnReport'););
-    
+
     //add newReport object
     var newReport ={
       skywarn_id: $scope.spotterID,

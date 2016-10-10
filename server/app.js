@@ -46,3 +46,17 @@ app.post('/addReport', function(req,res){
     }//end else
   });//end newReport.save
 });//end addReport
+
+//view all spotter reports
+app.get('/viewAll',function(req,res){
+  Skywarn.find({},function(err,skywarnResults){
+    if(err){
+      console.log('error: ',err);
+      res.sendStatus(500);
+    }//end if
+    else{
+      console.log("Skywarn Results",skywarnResults);
+      res.send(skywarnResults);
+    }//end else
+  });//end find
+});//end viewAll

@@ -24,3 +24,25 @@ app.get( '/', function(req,res){
 });//end base url hit
 
 app.use( express.static('public'));
+
+app.post('/addReport', function(req,res){
+  console.log('in addReport');
+  var newReport = new Skywarn({
+    skywarn_id: req.body.skywarn_id,
+    callsign: req.body.callsign,
+    current_location: req.body.current_location,
+    weather_condition: req.body.weather_condition,
+    additional_information: req.body.additional_information,
+    time: req.body.report_time
+  });//end newReport
+
+  newReport.save(function(err){
+    if(err){
+      console.log('error occured:', err);
+      res.sendStatus(500);
+    }//end if
+    else{
+      res.sendStatus(201);
+    }//end else
+  });//end newReport.save
+});//end addReport

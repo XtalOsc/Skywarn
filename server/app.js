@@ -8,7 +8,7 @@ var port = process.env.PORT || 9001;
 app.use(bodyParser.json());
 
 //model
-// var Model = require('../models/model.js');
+var Skywarn = require('../models/model.js');
 
 mongoose.connect("mongodb://localhost:27017/skywarnApp");
 

@@ -1,5 +1,6 @@
 myApp.controller("view1",["$scope","$http",function($scope,$http){
   if(verbose){console.log('in controller1');};
+
   $scope.items = [
     { id: 1, name: 'Damage' },
     { id: 2, name: 'Flooding' },
@@ -9,4 +10,5 @@ myApp.controller("view1",["$scope","$http",function($scope,$http){
     { id: 6, name: 'Rotating Wall Cloud observed for 1-2 min' },
     { id: 7, name: 'Tornado' }
   ];//end scope.items
+
 }]);//end view1 controller

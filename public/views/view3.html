@@ -1,1 +1,26 @@
-<h2>View Spotter Reports</h2>
+<div class="container">
+  <h2>View Spotter Reports</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Spotter ID</th>
+        <th>Call Sign</th>
+        <th>Current Location</th>
+        <th>Type of Weather</th>
+        <th>Additional Info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <div>
+        <tr ng-repeat = 'ref in collect'>
+          <td>{{ref.skywarn_id}}</td>
+          <td>{{ref.callsign}}</td>
+          <td>{{ref.current_location}}</td>
+          <td>{{ref.weather_condition.name}}</td>
+          <td>{{ref.additional_information}}</td>
+        </tr>
+      </div>
+    </tbody>
+  </table>
+</div>

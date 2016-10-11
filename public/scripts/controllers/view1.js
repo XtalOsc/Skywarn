@@ -12,7 +12,7 @@ myApp.controller("view1",["$scope","$http",function($scope,$http){
   ];//end scope.items
 
   $scope.newSkywarnReport = function(){
-    if(verbose){console.log('in newSkywarnReport'););
+    if(verbose){console.log('in newSkywarnReport');};
 
     //add newReport object
     var newReport ={

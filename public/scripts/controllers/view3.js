@@ -3,12 +3,12 @@ myApp.controller("view3",["$scope","$http",function($scope,$http){
 
   $scope.collect =[];
   $scope.viewReports = function(){
-    if(verbose){console.log('in viewReports'););
+    if(verbose){console.log('in viewReports');};
     $http({
       method:'GET',
       url: '/viewAll'
     }).then(function(response){
-      if(verbose){console.log("response from database:",response.data););
+      if(verbose){console.log("response from database:",response.data);};
       $scope.collect=response.data;
     })//end response
   };//end viewReports

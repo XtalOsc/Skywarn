@@ -21,10 +21,6 @@ body {
   margin: 3px 20px 0px 20px;
 }
 
-.form {
-  margin-bottom: 10px;
-}
-
 h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -36,11 +32,11 @@ h4 {
 
 h5 {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
-input{
+input {
   margin-right: 10px;
   border-width: thin;
   padding-left: 5px;
@@ -48,13 +44,18 @@ input{
   border-right-color: black;
 }
 
-.loading{
+.left {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.loading {
   margin-top:15px;
   height:300px;
   width: auto;
 }
 
-.logo{
+.logo {
   margin-top:-5px;
   height:30px;
   width: auto;
@@ -67,6 +68,11 @@ input{
 p {
   text-align: center;
   margin-bottom: 0;
+}
+
+.right {
+  margin-bottom: 12px;
+  text-align: right;
 }
 
 .warning {

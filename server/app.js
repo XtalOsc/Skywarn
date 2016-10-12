@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 //model
 var Skywarn = require('../models/model.js');
 
+//connect to mongoDB
 mongoose.connect("mongodb://localhost:27017/skywarnApp");
 
 //spin up server
@@ -25,6 +26,7 @@ app.get( '/', function(req,res){
 
 app.use( express.static('public'));
 
+//add report to database
 app.post('/addReport', function(req,res){
   console.log('in addReport');
   var newReport = new Skywarn({

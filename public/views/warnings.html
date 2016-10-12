@@ -5,6 +5,11 @@
   <button class="button" ng-click="searchZip()">Submit</button>
 </p>
 
+<div ng-show="loading">
+<br><h5>Loading . . . .</h5>
+<p><img src="./image/weather.gif" alt="loading image" class="loading"></p>
+</div>
+
   <div ng-repeat='warning in report.alerts'>
     <br><h4 class="warning">{{warning.description}}</h4>
     <p><b>Starts:</b> {{warning.date}}</p>

@@ -4,29 +4,6 @@ body{
   padding-right: 15px;
 }
 
-img{
-  margin-top:-5px;
-  height:30px;
-  width: auto;
-}
-
-h2{
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-p{
-  text-align: center;
-}
-
-input{
-  margin-right: 10px;
-  border-width: thin;
-  padding-left: 5px;
-  border-bottom-color: black;
-  border-right-color: black;
-}
-
 .button{
   margin: 10px 0px 0px 5px;
   border-radius: 5px;
@@ -40,24 +17,44 @@ input{
   margin: 0 auto;
 }
 
-.warning{
-font-size: 20px;
-font-weight: bold;
-text-decoration: underline;
-}
-
-.date{
-  font-size: 15px;
-}
-
 .description{
-  font-size: 15px;
+  margin: 3px 20px 0px 20px;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h4{
+margin-bottom: 3px;
+}
+
+img{
+  margin-top:-5px;
+  height:30px;
+  width: auto;
+}
+
+input{
+  margin-right: 10px;
+  border-width: thin;
+  padding-left: 5px;
+  border-bottom-color: black;
+  border-right-color: black;
 }
 
 .navbar-inverse .navbar-brand {
     color: #FFF;
 }
 
-.expire{
-  font-size: 15px;
+p{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.warning{
+font-weight: bold;
+text-decoration: underline;
+text-align: center;
 }

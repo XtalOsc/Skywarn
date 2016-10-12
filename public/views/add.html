@@ -1,0 +1,13 @@
+<h2>Spotter Report Form</h2>
+
+<p class="form">Spotter ID: <input type="text" ng-model="spotterID" size="10"></p>
+<p class="form">Call Sign: <input type="text" ng-model="callsign" size="10"></p>
+<p class="form">Current Location - Report Major Cross Streets: <input type="text" ng-model="currentLocation" size="40"></p>
+<p class="form">
+  Type of Weather Reporting:
+  <select ng-model="weatherEvent" ng-options="item as item.name for item in items" width="30">
+    <option value="" ng-if="weatherEvent">Select weather event</option>
+  </select>
+</p>
+<p class="form">Additional Information: <input type="text" ng-model="addInfo" size="40"></p>
+<button class="button center" ng-click="newSkywarnReport()">Submit</button>

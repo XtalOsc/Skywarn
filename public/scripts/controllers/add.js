@@ -1,5 +1,5 @@
-myApp.controller("view1",["$scope","$http",function($scope,$http){
-  if(verbose){console.log('in controller1');};
+myApp.controller("add",["$scope","$http",function($scope,$http){
+  if(verbose){console.log('in add controller');};
 
   $scope.items = [
     { id: 1, name: 'Damage' },
@@ -23,6 +23,7 @@ myApp.controller("view1",["$scope","$http",function($scope,$http){
       additional_information: $scope.addInfo
     };//end newReport object
 
+    //send spotter report to server
     $http({
       method: 'POST',
       url: '/addReport',
@@ -35,7 +36,7 @@ myApp.controller("view1",["$scope","$http",function($scope,$http){
       $scope.currentLocation="";
       $scope.weatherEvent="";
       $scope.addInfo="";
-    })//end return
-  };//end newSkywarnReport
+    })//end /addReport return
+  };//end newSkywarnReport function
 
-}]);//end view1 controller
+}]);//end add controller

@@ -7,7 +7,8 @@ var skywarnReportSchema = new Schema({
   callsign: String,
   current_location: String,
   weather_condition: Object,
-  additional_information: String
+  additional_information: String,
+  time: String
 });
 
 var Skywarn = mongoose.model('skywarn', skywarnReportSchema);

@@ -33,7 +33,7 @@ app.post('/addReport', function(req,res){
     current_location: req.body.current_location,
     weather_condition: req.body.weather_condition,
     additional_information: req.body.additional_information,
-    time: req.body.report_time
+    time: Date()
   });//end newReport
 
   newReport.save(function(err){

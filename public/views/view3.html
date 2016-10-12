@@ -4,6 +4,7 @@
   <table class="table">
     <thead>
       <tr>
+        <th>Time</th>
         <th>Spotter ID</th>
         <th>Call Sign</th>
         <th>Current Location</th>
@@ -14,6 +15,7 @@
     <tbody>
       <div>
         <tr ng-repeat = 'ref in collect'>
+          <td>{{ref.time}}</td>
           <td>{{ref.skywarn_id}}</td>
           <td>{{ref.callsign}}</td>
           <td>{{ref.current_location}}</td>

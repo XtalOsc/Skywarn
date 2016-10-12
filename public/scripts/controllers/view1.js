@@ -6,8 +6,8 @@ myApp.controller("view1",["$scope","$http",function($scope,$http){
     { id: 2, name: 'Flooding' },
     { id: 3, name: 'Funnel Cloud' },
     { id: 4, name: 'Hail' },
-    { id: 5, name: 'Non-rotating Wall Cloud observed for 3-5 min' },
-    { id: 6, name: 'Rotating Wall Cloud observed for 1-2 min' },
+    { id: 5, name: 'Non-Rotating Wall Cloud Observed for 5-10 min' },
+    { id: 6, name: 'Rotating Wall Cloud Observed for 1-3 min' },
     { id: 7, name: 'Tornado' }
   ];//end scope.items
 
@@ -20,7 +20,7 @@ myApp.controller("view1",["$scope","$http",function($scope,$http){
       callsign: $scope.callsign,
       current_location: $scope.currentLocation,
       weather_condition: $scope.weatherEvent,
-      additional_information: $scope.addInfo,
+      additional_information: $scope.addInfo
     };//end newReport object
 
     $http({

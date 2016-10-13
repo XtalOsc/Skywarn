@@ -1,3 +1,4 @@
+//show or hide console logs
 var verbose = true;
 if(verbose){console.log('in client.js');};
 var myApp = angular.module("myApp", ["ngRoute"]);

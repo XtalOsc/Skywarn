@@ -9,12 +9,12 @@ myApp.controller( 'home', [ '$scope', '$http', function( $scope, $http ){
 
   //run at controller load
   $scope.init = function(){
-    console.log( 'in init' );
+    if(verbose){console.log( 'in init' );};
     // check if a user's info is saved in localStorage
     if( JSON.parse( localStorage.getItem( 'userProfile' ) ) ){
       // if so, save userProfile as $scope.userProfile
       $scope.userProfile = JSON.parse( localStorage.getItem( 'userProfile' ) );
-      console.log( 'loggedIn:', $scope.userProfile );
+      if(verbose){console.log( 'loggedIn:', $scope.userProfile );};
       $scope.showUser = true;
       if( $scope.userProfile.email == 'admin@admin.com' ){
         $scope.isAdmin = true;
